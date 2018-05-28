@@ -14,3 +14,31 @@
 # 6.2 讲师视图， 讲师可管理自己的班级， 上课时选择班级， 查看班级学员列表 ， 修改所管理的学员的成绩
 # 6.3 管理视图，创建讲师， 创建班级，创建课程
 # 7. 上面的操作产生的数据都通过pickle序列化保存到文件里
+
+
+
+
+class School(object):
+    def __init__(self,name,city,address):
+        self.name=name
+        self.city=city
+        self.address=address
+
+class Course(School):
+    def __init__(self,name,city,address):
+
+
+class Student(School):
+    def __init__(self,username,):
+    School.Course()
+
+
+class Teacher(School):
+    def __init__(self,teachername,):
+
+
+
+
+
+
+
