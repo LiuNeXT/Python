@@ -15,8 +15,6 @@
 # 6.3 管理视图，创建讲师， 创建班级，创建课程
 # 7. 上面的操作产生的数据都通过pickle序列化保存到文件里
 
-
-
 __author__ = "Alex Li"
 
 class School(object):
@@ -26,10 +24,11 @@ class School(object):
         self.students =[]
         self.staffs =[]
     def enroll(self,stu_obj):
-        print("为学员%s 办理注册手续"%stu_obj.name )
+        print("为学员%s 办理注册手续" %stu_obj.name )
         self.students.append(stu_obj)
         print("")
-        self.staffs.append()
+        self.staffs.append(stu_obj)
+        print("%s")
     def hire(self,staff_obj):
         self.staffs.append(staff_obj)
         print("雇佣新员工%s" % staff_obj.name)
@@ -79,10 +78,8 @@ class Student(SchoolMember):
 
 
 school = School("老男孩IT","沙河")
-
 t1 = Teacher("Oldboy",56,"MF",200000,"Linux")
 t2 = Teacher("Alex",22,"M",3000,"PythonDevOps")
-
 s1 = Student("ChenRonghua",36,"MF",1001,"PythonDevOps")
 s2 = Student("徐良伟",19,"M",1002,"Linux")
 
@@ -98,10 +95,3 @@ print(school.staffs)
 school.staffs[0].teach()
 for stu in school.students:
     stu.pay_tuition(5000)
-
-
-
-
-
-
-
