@@ -1,34 +1,30 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#事列
-# class Role(object):
-#     def __init__(self, name, role, weapon, life_value=100, money=15000):
-#         self.name = name
-#         self.role = role
-#         self.weapon = weapon
-#         self.life_value = life_value
-#         self.money = money
-#
-#     def shot(self):
-#         print("shooting...")
-#
-#     def got_shot(self):
-#         print("ah...,I got shot...")
-#
-#     def buy_gun(self, gun_name):
-#         print("just bought %s" % gun_name)
-#
-#
-# r1 = Role('Alex', 'police', 'AK47’) #生成一个角色
-# r2 = Role('Jack', 'terrorist', 'B22’)  #生成一个角色
+事列
+class Role(object):
+    def __init__(self, name, role, weapon, life_value=100, money=15000):
+        self.name = name
+        self.role = role
+        self.weapon = weapon
+        self.life_value = life_value
+        self.money = money
+
+    def shot(self):
+        print("shooting...")
+
+    def got_shot(self):
+        print("ah...,I got shot...")
+
+    def buy_gun(self, gun_name):
+        print("just bought %s" % gun_name)
+
+
+r1 = Role('Alex', 'police', 'AK47’) #生成一个角色
+r2 = Role('Jack', 'terrorist', 'B22’)  #生成一个角色
 
 
 #继承事列
-# !_*_coding:utf-8_*_
-# __author__:"Alex Li"
-
-
 class SchoolMember(object):
     members = 0  # 初始学校人数为0
 
@@ -112,8 +108,6 @@ r2.buy_shot()
 
 c1.talk
 d1.talk
-
-
 
 
 

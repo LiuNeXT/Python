@@ -74,7 +74,7 @@ class Student(SchoolMember):
         Grade:%s
         ''' % (self.name, self.name, self.age, self.sex, self.stu_id, self.grade))
     def pay_tuition(self,amount):
-        print("%s has paid tution for $%s"% (self.name,amount) )
+        print("%s has paid tution for $%s"% (self.name,amount))
 
 
 school = School("老男孩IT","沙河")
