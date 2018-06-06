@@ -10,7 +10,7 @@ client.connect(('localhost',8909))
 while True:
     msg = input(">>:").strip()
     if len(msg)==0:continue
-    client.send(b"Hello WOrld!")
+    client.send(b"%s")
     data = client.recv(1024)
     client.close()
     print('recv',data)
